@@ -16,6 +16,18 @@ DevConnect is a full-stack social networking web application engineered to suppo
 * **Cloud Media Processing:** Integrated Cloudinary API for optimized image storage and rendering.
 * **Responsive UI/UX:** Built with React for a seamless single-page application (SPA) experience across devices.
 
+## 📸 App Screenshots
+
+### Home Feed
+![Home Page](readme-images/kl-social-network-home-gregor.PNG)
+
+### Friends Network
+![Friends Page](readme-images/kl-social-network-friends-gregor.PNG)
+
+### Media & Photos
+![Photos Page](readme-images/kl-social-network-photos-gregor.PNG)
+
+---
 ## 🛠️ Local Setup Instructions
 
 ### 1. Database Configuration
