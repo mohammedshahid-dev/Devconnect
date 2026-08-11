@@ -1,110 +1,35 @@
-# Social-Network
+# DevConnect | Full-Stack Social Networking Platform
 
-Social-Network is a Stateful app built with [Spring Boot](http://spring.io/projects/spring-boot), [MySQL](https://www.mysql.com/) and [React](https://reactjs.org/).
+DevConnect is a full-stack social networking web application engineered to support real-time social interactions, secure user authentication, dynamic feeds, and media sharing.
 
-Features:
-- Routing
-- User authentication: Register/Login/Logout
-- 3 User Roles: Root, Admin and User
-- Promoting/Demoting users to Admin/User
-- Creating and deleting users
-- Editing user profile
-- Searching for friends
-- Sending and accepting friend requests
-- Removing friends from the friends list
-- Adding and deleting photos
-- Creating and deleting posts
-- Creating and deleting comments
-- Chat functionality: writing and receiving messages from your friends
-- Logs history
+## 🚀 Tech Stack
+* **Frontend:** React.js, JavaScript, HTML5, CSS3
+* **Backend:** Java, Spring Boot, RESTful APIs
+* **Database:** MySQL
+* **Cloud & Media:** Cloudinary API (Image & Media Storage)
+* **Version Control & Tools:** Git, GitHub, Maven
 
-The project is deployed on [Heroku](https://social-network-kl.herokuapp.com/).
+## ✨ Key Features
+* **User Authentication & Authorization:** Secure login, registration, and session handling.
+* **Dynamic Feed Rendering:** Real-time social feed displaying posts, likes, and comments from connected users.
+* **Social Graph Management:** Send, accept, and manage friend requests and user networks.
+* **Cloud Media Processing:** Integrated Cloudinary API for optimized image storage and rendering.
+* **Responsive UI/UX:** Built with React for a seamless single-page application (SPA) experience across devices.
 
-**Admin Credentials:**
-- username: john
-- password: 1111
+## 🛠️ Local Setup Instructions
 
-## Requirements
+### 1. Database Configuration
+1. Create a MySQL database named `social_network_db`.
+2. Update your Spring Boot application properties (`src/main/resources/application.properties`) with your local MySQL credentials.
 
-1. Java 11
-
-2. In order to be able to save `Photos` you need to sign up to [Cloudinary](https://cloudinary.com/) and enter your credentials in the `application.properties` file of the Spring Boot app (`SocialNetwork\Server\src\main\resources\application.properties`)
-
-## Start the app
-
-### **Option 1 - Start the Client and the Server manually**
-
-#### 1. Start the Client
-
-To start the Client you need to enter the `SocialNetwork/Client` folder:
-
+### 2. Backend Setup (Spring Boot)
 ```bash
-$ cd SocialNetwork/Client
-```
+# Navigate to the backend directory and run:
+mvn spring-boot:run
 
-Install all dependencies:
-
+### 3. Frontend Setup (React)
 ```bash
-$ npm install
-```
+# Navigate to the frontend directory, install dependencies, and start:
+npm install
+npm start
 
-Run the app in the development mode:
-
-```bash
-$ npm start
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-#### 2. Start the Server
-
-Go to the root directory of the Spring Boot app:
-
-```bash
-$ cd SocialNetwork/Server
-```
-
-Start the Server:
-
-```bash
-$ mvn spring-boot:run
-```
-The Server is running on port `8000`.
-
-
-### **Option 2 - Start the application in Docker**
-
-1. **Start the application**
-
-Go to the project directory( `SocialNetwork/` ) and run:
-
-```bash
-$ docker-compose up -d
-```
-
-The front-end server will start on port `9090`. To open it enter in your browser:
-
-```bash
-$ http://localhost:9090
-```
-2. **Stop the application**
-
-You can stop the containers with:
-
- ```bash 
- $ docker-compose down
- ```
-
-## App screenshots
-
-1. **Home Page**
-
- ![App Screenshot](readme-images/kl-social-network-home-gregor.PNG)
-
-2. **Friends Page**
-
- ![App Screenshot](readme-images/kl-social-network-friends-gregor.PNG)
-
-3. **Photos Page**
-
- ![App Screenshot](readme-images/kl-social-network-photos-gregor.PNG)
