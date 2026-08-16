@@ -1,6 +1,6 @@
 # DevConnect | Full-Stack Social Networking Platform
 
-DevConnect is a full-stack social networking web application engineered to support real-time social interactions, secure user authentication, dynamic feeds, and media sharing.
+DevConnect is a full-stack social networking web application engineered to support real-time social interactions, secure user authentication, dynamic feeds, and vedio sharing.
 
 ## 🚀 Tech Stack
 * **Frontend:** React.js, JavaScript, HTML5, CSS3
